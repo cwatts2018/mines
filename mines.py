@@ -1,14 +1,5 @@
-"""
-6.1010 Spring '23 Lab 7: Mines
-"""
-
-#!/usr/bin/env python3
-
 import typing
 import doctest
-
-# NO ADDITIONAL IMPORTS ALLOWED!
-
 
 def dump(game):
     """
@@ -483,19 +474,16 @@ def render_nd(game, xray=False):
 
 
 if __name__ == "__main__":
-    # Test with doctests. Helpful to debug individual lab.py functions.
-    _doctest_flags = doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS
-    doctest.testmod(optionflags=_doctest_flags)  # runs ALL doctests
-    
+    #example usage
     # g = new_game_nd((3,), [(1,)])
     # print(g)
     # dig_nd(g, (0,))
     # print(g)
     # dig_nd(g, (2,))
     # print(g)
+    
     # g = new_game_nd((3,5), [(1,1), (2,2)])
     # print(g, "\n")
-    
     # dig_nd(g, (0,4))
     # print(g)
     # print(render_nd(g))
@@ -517,81 +505,7 @@ if __name__ == "__main__":
     # print(g["board"])
     # update_game(g["board"], (0,1,1), 2)
     # print(g["board"])
-    # n = get_neighors_rec((10,20,3), (5,13,0))
-    # print(n)
-    # print(len(n))
-    # game = {'dimensions': (2, 4),
-    #          'board': [['.', 3, 1, 0],
-    #                    ['.', '.', 1, 0]],
-    #          'hidden': [[True, False, True, True],
-    #                   [True, True, True, True]],
-    #          'state': 'ongoing'}
-    # print(dig_2d(game, 0, 3))
-    # #4
-    # print(game)
-    # # board:
-    # #     ['.', 3, 1, 0]
-    # #     ['.', '.', 1, 0]
-    # # dimensions: (2, 4)
-    # # hidden:
-    # #     [True, False, False, False]
-    # #     [True, True, False, False]
-    # # state: victory
 
-    # game = {'dimensions': [2, 4],
-    #         'board': [['.', 3, 1, 0],
-    #                    ['.', '.', 1, 0]],
-    #          'hidden': [[True, False, True, True],
-    #                   [True, True, True, True]],
-    #          'state': 'ongoing'}
-    # print(dig_2d(game, 0, 0))
-    # #1
-    # print(game)
-    # # >>> dump(game)
-    # # board:
-    # #     ['.', 3, 1, 0]
-    # #     ['.', '.', 1, 0]
-    # # dimensions: [2, 4]
-    # # hidden:
-    # #     [False, False, True, True]
-    # #     [True, True, True, True]
-    # # state: defeat
-    # # print(get_valid_neighbors(1, 1, 3, 3))
-    # # g = render_2d_locations({'dimensions': (2, 4),
-    # #         'state': 'ongoing',
-    # #          'board': [['.', 3, 1, 0],
-    # #                    ['.', '.', 1, 0]],
-    # #          'hidden':  [[True, False, False, True],
-    # #                   [True, True, False, True]]}, False)
-    # # #[['_', '3', '1', '_'], ['_', '_', '1', '_']]
-    # # print(g)
-    # # g = render_2d_locations({'dimensions': (2, 4),
-    # #          'state': 'ongoing',
-    # #          'board': [['.', 3, 1, 0],
-    # #                    ['.', '.', 1, 0]],
-    # #          'hidden':  [[True, False, True, False],
-    # #                    [True, True, True, False]]}, True)
-    # # print(g)
-    
-    # #[['.', '3', '1', ' '], ['.', '.', '1', ' ']]
-    
-    # g =render_2d_board({'dimensions': (2, 4),
-    #                   'state': 'ongoing',
-    #                   'board': [['.', 3, 1, 0],
-    #                             ['.', '.', 1, 0]],
-    #                   'hidden':  [[False, False, False, True],
-    #                             [True, True, False, True]]}, True)
-    # print(g)
-    # g = new_game_2d(2, 4, [(0, 0), (1, 0), (1, 1)])
-    # print(g)
-    #'.31_\\n__1_'
-    # Alternatively, can run the doctests JUST for specified function/methods,
-    # e.g., for render_2d_locations or any other function you might want.  To
-    # do so, comment out the above line, and uncomment the below line of code.
-    # This may be useful as you write/debug individual doctests or functions.
-    # Also, the verbose flag can be set to True to see all test results,
-    # including those that pass.
-    #
     #doctest.run_docstring_examples(
     #    render_2d_locations,
     #    globals(),
